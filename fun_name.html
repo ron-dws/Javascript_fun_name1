@@ -1,0 +1,60 @@
+<html>
+  <head>
+     <title>fun name Web page</title>
+	 
+	 <script>
+		function work() {
+
+			var x = document.getElementById("name").value;
+			
+			if(x == "")
+			{
+			   alert("Debes ingresar un nombre");
+			}
+			else if(x.toUpperCase() != "RON")
+			{document.getElementById("demo").innerHTML = "Tu nombre no es: " + x; 
+			document.getElementById('myImage').src='img/bulb_off.jpg';
+			document.getElementById('myImage2').src='img/angry2.png';
+			}
+			else 
+			{ document.getElementById("demo").innerHTML = "<b style='color:deeppink;'>Thank you Ron!</b>"; 
+			document.getElementById('myImage').src='img/bulb_on.jpg';
+			document.getElementById('myImage2').src='img/happy2.png';
+			}
+			
+		}
+	 </script>
+	 
+  </head>
+  
+  
+  <body style="background-music:#fffdfd;">
+    <div style="background-color:lightblue;">
+      <h1 style="text-align: center; background-color: lightblue; color:#203dad; padding-top: 40px;">Bienvenido en mi pagina </h1>
+	  <h2 style="text-align: center; background-color: lightblue; color:#203dad;">Estoy <b style="color:#e83bc9;">RON</h2>
+	  
+	</div>
+	<div style="text-align:center;">
+	   <input type="text" style="height:50px; width: 700px; font-size:24px;" id="name" placeholder="Entra tu nombre aqui" /> <br/><br/><br/>
+	   <!-- <input type="Submit" name="Go" style="height:50px; width: 100px;" > -->
+	   
+	   
+	   <button type="button" onclick="work()" style="background-color:#f0f0f0; height:50px; width:120px;">Dime tu nombre</button><br/><br/>
+	   
+	   <p style="color:blue; font-size:25px;"id="demo"></p>
+	   
+	   <img id="myImage" src="img/bulb_off.jpg">
+	   
+	   <img id="myImage2" src="img/neutral2.png">
+       
+	   
+	</div>
+
+
+	   
+
+	   
+  </body>
+
+
+</html>
